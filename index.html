@@ -8,7 +8,6 @@
 		background: url(https://content.gmgamingsystems.com/medialibraries/content.gmgamingsystems.com/New-Media/BetwayZA/Other/Betway_maintenancepage.jpg) no-repeat;
 		font-family: 'Interface', Arial, sans-serif;
 		margin: 0;
-		overflow: hidden;
 		text-align: center;
 	}
 
@@ -35,16 +34,25 @@
 		align-content: right;
     	width: 100%;
 	}
-	.logo{
-		width: 60%;
-		display: inline-block;
-		justify-content: right;
-		text-align: right;
+	.logo-and-chat{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
 	}
 	.chat{
-		margin-left: 310px;
-		width: 50px;
-		margin-bottom: 33px;
+		width: 50%;
+		justify-content: center;
+		display: flex;
+		align-items: flex-end;
+		align-content: stretch;
+	}
+	.logo{
+		width: 50%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-start;
+		align-content: stretch;
 	}
 	.header{
 		font-size: 60px;
@@ -65,13 +73,25 @@
 			max-width: 40%;
 		}
 	}
+	@media only screen and (min-width : 320px) and (max-width : 767px) { 
+		body {
+			background-position: right;
+		}
+	}
+
 </style>
 </head>
 	<body>
 		<section id="main">
-			<div class="logo">
-				<img src="https://content.gmgamingsystems.com/medialibraries/content.gmgamingsystems.com/New-Media/BetwayGH/Other/betway_white.png" alt="Betway">
-				<img class="chat" src="https://content.gmgamingsystems.com/medialibraries/content.gmgamingsystems.com/New-Media/BetwayZA/Other/chat.png" alt="Betway">
+			<div class="logo-and-chat">
+				<div class="logo">
+					<img src="https://content.gmgamingsystems.com/medialibraries/content.gmgamingsystems.com/New-Media/BetwayGH/Other/betway_white.png" alt="Betway">
+				</div>
+				<div class="chat">
+					<img style="width:50px" src="https://content.gmgamingsystems.com/medialibraries/content.gmgamingsystems.com/New-Media/BetwayZA/Other/chat.png" alt="Betway">
+				</div>
+				<!-- <img src="https://content.gmgamingsystems.com/medialibraries/content.gmgamingsystems.com/New-Media/BetwayGH/Other/betway_white.png" alt="Betway">
+				<img class="chat" src="https://content.gmgamingsystems.com/medialibraries/content.gmgamingsystems.com/New-Media/BetwayZA/Other/chat.png" alt="Betway"> -->
 			</div>
 			<div class="container">
 				<div class="row">
